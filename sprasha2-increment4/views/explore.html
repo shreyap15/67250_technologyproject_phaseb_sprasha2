@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="/sprasha2-increment3/static/style.css">
+    <link rel="stylesheet" href="../static/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="../static/script.js" defer></script>
 </head>
-<body>
-    <header>
-        <img id="logo" src="/sprasha2-increment3/static/monomuselogo.png" alt="MonoMuse Museum Logo">
-        <nav>
-            <a href="../index.html">Home</a>
-            <a id="navselected" href="explore.html">Explore</a>
-            <a href="exhibitions.html">Exhibitions</a>
-            <a href="tickets.html">Tickets</a>
-            <a href="checkout.html">Checkout</a>
-        </nav>
+<body onload="addYear()">
+    <div class="container">
+    <header class="header">
+        <img id="logo" src="../static/monomuselogo.png" alt="MonoMuse Museum Logo">
+        
     </header>
-    <div class="main">
+    <nav class="nav_bar">
+            <a href="../index.html">Home</a>
+            <a href="explore.html">Explore</a>
+            <a href="exhibitions.html">Exhibitions</a>
+            <a href="buytickets.html">Tickets</a>
+        </nav>
+    <main class="main">
         <h2>Mission Statement</h2>
         <p>MonoMuse is dedicated to exploring the evolving relationship between art, technology, and society. Our mission is to inspire curiosity and creativity by showcasing innovative exhibitions that highlight how digital tools, emerging technologies, and human imagination shape the future of artistic expression.</p>
         <h3>Milestones</h3>
@@ -26,9 +29,14 @@
             <li>2018: Launch of the Interactive Media Lab, allowing visitors to experiment with creative coding.</li>
             <li>2016: MonoMuse opens its doors with its first exhibition on digital storytelling.</li>
         </ul>
-        <footer>
-            <p>&copy; 2026 MonoMuse. All rights reserved.</p>
+        
+    </main>
+    <figure class="main_figure main_img"></figure>
+    <footer class="footer">
+            <p id="copyYear"></p>
+            <p>&copy; MonoMuse. All rights reserved.</p>
         </footer>
     </div>
 </body>
+</html>
 </html>
