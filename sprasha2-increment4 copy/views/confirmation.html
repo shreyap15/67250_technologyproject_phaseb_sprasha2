@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang=\"en\">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Shreya Prashantha">
+    <meta name="description" content="MonoMuse order confirmation">
+    <title>MonoMuse | Confirmation</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- External library: jQuery (https://jquery.com/) -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="../static/script.js" defer></script>
+</head>
+<body onload="addYear()">
+    <div class="container">
+    <header class="header">
+        <img id="logo" src="../static/monomuselogo.png" alt="MonoMuse Museum Logo">
+        <nav class="nav_bar">
+            <a href="../index.html">Home</a>
+            <a href="explore.html">Explore</a>
+            <a href="exhibitions.html">Exhibitions</a>
+            <a href="buytickets.html">Tickets</a>
+            <a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776;</a>
+        </nav>
+    </header>
+    <main class="main">
+        <h1>Order Confirmation</h1>
+        <p id="confirmationMessage">Thank you for your order.</p>
+        <p class="total-line">Total Paid: $<span id="confirmationTotal">0</span></p>
+        <p>This is a simulated checkout. No payment processing is required.</p>
+    </main>
+    <footer class="footer">
+        <p id="copyYear"></p>
+        <p>&copy; MonoMuse. All rights reserved.</p>
+    </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang=\"en\">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Shreya Prashantha">
+    <meta name="description" content="MonoMuse ticket pricing">
+    <title>MonoMuse | Ticket Info</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- External library: jQuery (https://jquery.com/) -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="../static/script.js" defer></script>
+</head>
+<body onload="addYear()" style="background: linear-gradient(rgba(255,255,255,0.45), rgba(255,255,255,0.45)), url('../static/home-image.jpg'); background-size: cover; background-position: center; color: #000000;">
+    <div class="container">
+    <header class="header">
+        <img id="logo" src="../static/monomuselogo.png" alt="MonoMuse Museum Logo">
+        
+    
+        <nav class="nav_bar">
+            <a href="../index.html">Home</a>
+            <a href="explore.html">Explore</a>
+            <a href="exhibitions.html">Exhibitions</a>
+            <a href="buytickets.html">Tickets</a>
+                <a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776;</a>
+    </nav>
+    </header>
+    <main class="main" style="color: #000000;">
+        <h1>Ticket Pricing</h1>
+        <table>
+            <tr>
+                <th>Ticket Type</th>
+                <th>Description</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Adult</td>
+                <td>General admission for ages 18 and over. Under 18 is free of charge.</td>
+                <td>$18.00</td>
+            </tr>
+            <tr>
+                <td>Student</td>
+                <td>Valid student ID required.</td>
+                <td>$10.00</td>
+            </tr>
+            <tr>
+                <td>Member</td>
+                <td>Valid member ID required.</td>
+                <td>$15.00</td>
+            </tr>
+        </table>
+        
+    </main>
+    <figure class="main_figure main_img"></figure>
+    <footer class="footer">
+            <p id="copyYear"></p>
+            <p>&copy; MonoMuse. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

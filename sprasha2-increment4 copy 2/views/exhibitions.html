@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang=\"en\">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Shreya Prashantha">
+    <meta name="description" content="MonoMuse exhibitions">
+    <title>MonoMuse | Exhibitions</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- External library: jQuery (https://jquery.com/) -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="../static/script.js" defer></script>
+</head>
+<body onload="addYear()" style="background: #ffffff;">
+    <div class="container">
+    <header class="header">
+        <img id="logo" src="../static/monomuselogo.png" alt="MonoMuse Museum Logo">
+        
+    
+        <nav class="nav_bar">
+            <a href="../index.html">Home</a>
+            <a href="explore.html">Explore</a>
+            <a href="exhibitions.html">Exhibitions</a>
+            <a href="buytickets.html">Tickets</a>
+                <a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776;</a>
+    </nav>
+    </header>
+    <main class="main">
+        <h1>Monet</h1>
+        <h2>Exhibitions</h2>
+        <!-- Media attribution: Exhibit images used for educational coursework only. -->
+        <section style="display: flex; gap: 16px; flex-wrap: wrap; align-items: center; justify-content: center;">
+            <img src="../static/landscape-image.jpg" alt="Landscape artwork by Monet">
+            <div style="max-width: 420px;">
+                <h3>Landscapes</h3>
+                <p>Encompassing his early career, this focuses on direct observation of scenes like beaches, villages, and the countryside, painting plein air (outdoors).</p>
+            </div>
+        </section>
+        <section style="display: flex; gap: 16px; flex-wrap: wrap; align-items: center; justify-content: center;">
+            <img src="../static/seascape-image.webp" alt="Seascape artwork by Monet">
+            <div style="max-width: 420px;">
+                <h3>Seascapes</h3>
+                <p>Along the Normandy coast and during his travels, he focused on capturing transient light, atmospheric effects, and the movement of water.</p>
+            </div>
+        </section>
+        <h3>Past Exhibitions Gallery</h3>
+        <div id="galleryWrapper">
+            <img id="galleryMain" class="gallery-main" src="../static/pissarro-image.jpeg" alt="Past exhibition highlight">
+            <button type="button" id="galleryPrev" aria-label="Previous exhibition image">◀</button>
+            <button type="button" id="galleryNext" aria-label="Next exhibition image">▶</button>
+        </div>
+        <div class="gallery">
+            <figure>
+                <button type="button" aria-label="View Camille Pissarro exhibition">
+                    <img class="gallery-thumb" src="../static/pissarro-image.jpeg" alt="Camille Pissarro exhibition">
+                </button>
+                <figcaption>Camille Pissarro (2023)</figcaption>
+            </figure>
+            <figure>
+                <button type="button" aria-label="View Berthe Morisot exhibition">
+                    <img class="gallery-thumb" src="../static/morisot-image.jpg" alt="Berthe Morisot exhibition">
+                </button>
+                <figcaption>Berthe Morisot (2021)</figcaption>
+            </figure>
+            <figure>
+                <button type="button" aria-label="View Mary Cassatt exhibition">
+                    <img class="gallery-thumb" src="../static/cassatt-image.jpg" alt="Mary Cassatt exhibition">
+                </button>
+                <figcaption>Mary Cassatt (2019)</figcaption>
+            </figure>
+        </div>
+    </main>
+    <figure class="main_figure main_img"></figure>
+    <footer class="footer">
+            <p id="copyYear"></p>
+            <p>&copy; MonoMuse. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

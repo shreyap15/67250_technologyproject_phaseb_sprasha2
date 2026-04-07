@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang=\"en\">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Shreya Prashantha">
+    <meta name="description" content="MonoMuse mission and location">
+    <title>MonoMuse | Explore</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha512-Zcn6bjR/8RZbLEpLIeOwNtzREBAJnUKESxces60Mpoj+2okopSAcSUIUOseddDm0cxnGQzxIR7vJgsLZbdLE3w==" crossorigin="">
+    <!-- External libraries: Leaflet (https://leafletjs.com/), jQuery (https://jquery.com/) -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha512-BwHfrr4c9kmRkLw6iXFdzcdWV/PGkVgiIyIWLLlTSXzWQzxuSg4DiQUCpauz/EWjgk5TYQqX/kvn9pG1NpYfqg==" crossorigin=""></script>
+    <script src="../static/script.js" defer></script>
+</head>
+<body onload="addYear()" style="background: #ffffff;">
+    <div class="container">
+    <header class="header">
+        <img id="logo" src="../static/monomuselogo.png" alt="MonoMuse Museum Logo">
+        
+    
+        <nav class="nav_bar">
+            <a href="../index.html">Home</a>
+            <a href="explore.html">Explore</a>
+            <a href="exhibitions.html">Exhibitions</a>
+            <a href="buytickets.html">Tickets</a>
+                <a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776;</a>
+    </nav>
+    </header>
+    <main class="main">
+        <h1>Explore MonoMuse</h1>
+        <div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; align-items: stretch; width: 100%;">
+            <img src="../static/explore-image.jpg" alt="Monet-inspired gallery" style="width: 320px; max-width: 100%; border: 1px solid #DDD5D0;">
+            <div style="background: #ffffff; color: #000000; padding: 16px; max-width: 520px; text-align: left;">
+                <h2 style="color: #07004D; text-align: left;">Mission Statement</h2>
+                <p style="text-align: left;">MonoMuse is an Impressionist artists museum that celebrates the movement’s pioneers, with Claude Monet featured in our most recent exhibition.</p>
+                <p style="text-align: left;">We present rotating shows that highlight distinct voices in Impressionism while connecting their techniques to the light‑filled approach Monet refined.</p>
+                <h3 style="color: #553D36; text-align: left;">Recent Exhibition Timeline</h3>
+                <ul style="text-align: left;">
+                    <li>2023: Camille Pissarro — rural life, city streets, and atmospheric color.</li>
+                    <li>2021: Berthe Morisot — intimate interiors and luminous portraiture.</li>
+                    <li>2019: Mary Cassatt — modern life, motherhood, and bold composition.</li>
+                    <li>2026: Claude Monet — the latest exhibition on light and water.</li>
+                </ul>
+            </div>
+        </div>
+        <div style="height: 16px;"></div>
+        <h3>Visit Us</h3>
+        <div id="map"></div>
+        <p style="max-width: 760px; text-align: left;">Directions: We are located in the museum district near the riverfront. Parking is available on Gallery Ave and in the adjacent public garage.</p>
+        
+    </main>
+    <figure class="main_figure main_img"></figure>
+    <footer class="footer">
+            <p id="copyYear"></p>
+            <p>&copy; MonoMuse. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

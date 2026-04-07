@@ -5,6 +5,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="../static/script.js" defer></script>
 </head>
@@ -13,15 +14,16 @@
     <header class="header">
         <img id="logo" src="../static/monomuselogo.png" alt="MonoMuse Museum Logo">
         
-    </header>
-    <nav class="nav_bar">
+        <nav class="nav_bar">
             <a href="../index.html">Home</a>
             <a href="explore.html">Explore</a>
             <a href="exhibitions.html">Exhibitions</a>
             <a href="buytickets.html">Tickets</a>
         </nav>
+    </header>
     <main class="main">
         <h2>Ticket Pricing</h2>
+        <div class="table-wrap">
         <table>
             <tr>
                 <th>Ticket Type</th>
@@ -30,7 +32,7 @@
             </tr>
             <tr>
                 <td>Adult</td>
-                <td>General admission for ages 18 and over. Under 18 is free of charge.</td>
+                <td>General admission for ages 18 and over. <span class="free-label">Under 18</span> is free of charge.</td>
                 <td>$18.00</td>
             </tr>
             <tr>
@@ -44,8 +46,10 @@
                 <td>$15.00</td>
             </tr>
         </table>
+        </div>
 
         <h3>April 2026 Ticket Schedule</h3>
+        <div class="table-wrap">
         <table>
             <tr>
                 <th>Date</th>
@@ -68,6 +72,7 @@
                 <td><button class="button" type="button" onclick="showPurchaseForm('April 26, 2026')">Buy Now</button></td>
             </tr>
         </table>
+        </div>
 
         <form id="ticketForm" onsubmit="return handleTicketSubmit(event)">
             <h3>Purchase Tickets</h3>

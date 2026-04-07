@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang=\"en\">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Shreya Prashantha">
+    <meta name="keywords" content="Museum, Carnegie Mellon University, Information Systems">
+    <meta name="description" content="MonoMuse homepage">
+    <title>MonoMuse | Home</title>
+    <link rel="stylesheet" href="./static/style.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- External library: jQuery (https://jquery.com/) -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="./static/script.js" defer></script>
+    </head>
+<body onload="addYear()" style="background: linear-gradient(rgba(255,255,255,0.45), rgba(255,255,255,0.45)), url('./static/home-image.jpg'); background-size: cover; background-position: center;">
+    <div class="container">
+    <header class="header">
+        <img id="logo" src="./static/monomuselogo.png" alt="MonoMuse Museum Logo">
+        
+    
+        <nav class="nav_bar">
+            <a href="index.html">Home</a>
+            <a href="views/explore.html">Explore</a>
+            <a href="views/exhibitions.html">Exhibitions</a>
+            <a href="views/buytickets.html">Tickets</a>
+                <a href="javascript:void(0);" class="icon" onclick="toggleNav()">&#9776;</a>
+    </nav>
+    </header>
+    <main class="main">
+        <h1 id="greeting">Welcome to the MonoMuse Museum</h1>
+        <div class="section-card">
+            <p>MonoMuse is a museum devoted to Claude Monet and the luminous world of Impressionism.</p>
+            <p>From plein air landscapes to shimmering seascapes, we highlight how Monet captured light, atmosphere, and movement.</p>
+        </div>
+        <div class="section-card">
+            <p id="shortIntro">Explore our signature Monet collections and seasonal exhibitions in one visit.</p>
+            <p id="longIntro">Our newest exhibition features late‑period Monet alongside select works from fellow Impressionists, tracing the movement’s evolving approach to light.</p>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 6px;">
+            <button id="readMore" class="quiet-link" type="button">Read More</button>
+            <button id="readLess" class="quiet-link" type="button">Read Less</button>
+            <button onclick = "window.location.href='views/buytickets.html'" class = "button" style="padding: 12px 36px;">Buy Tickets</button>
+        </div>
+        <iframe id="museumVideo" src="https://www.youtube.com/embed/1HdSCerL-Jg" title="Museum of Impressionism in Giverny video" allowfullscreen></iframe>
+        <!-- Media attribution: Video and images used for educational coursework only. -->
+        <section class="info-card">
+            <h2>Plan Your Visit</h2>
+            <table>
+                <tr>
+                    <th>Hours</th>
+                    <td>Tue–Sun 10:00 AM–6:00 PM (Closed Mondays)</td>
+                </tr>
+                <tr>
+                    <th>Location</th>
+                    <td>500 Gallery Ave, Pittsburgh, PA</td>
+                </tr>
+                <tr>
+                    <th>Contact</th>
+                    <td>info@monomuse.org | (412) 555‑0199</td>
+                </tr>
+            </table>
+            <h3>Membership & Donations</h3>
+            <p>Support the museum through memberships and donations that help preserve and expand our Impressionist collection.</p>
+        </section>
+    </main>
+    <figure class="main_figure main_img"></figure>
+    <footer class="footer">
+        <p id="copyYear"></p>
+        <p>&copy; MonoMuse. All rights reserved.</p>
+    </footer>
+    
+    </div>
+</body>
+</html>
